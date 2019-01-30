@@ -6,12 +6,10 @@ class Dog
 def initialize(name)
   @name = name
   @@all << self
-
-
 end
 
 def self.all
-@@all.map{|dog| dog.name}
+puts @@all.map{|dog| dog.name}
 end
 
 
